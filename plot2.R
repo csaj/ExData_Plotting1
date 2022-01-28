@@ -22,6 +22,6 @@ householdPowerData$Date = as.Date(householdPowerData$Date,"%d/%m/%Y")
 plotData = householdPowerData[as.Date("2007-02-01") <= householdPowerData$Date & householdPowerData$Date <= as.Date("2007-02-02"), ]
 
 png(file = "plot2.png")
-with(plotData, plot(DateTime,Global_active_power, type = "l", xlab = "", ylab = "Global Active Power"))
+with(plotData, plot(DateTime,Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)"))
 dev.off()
 
